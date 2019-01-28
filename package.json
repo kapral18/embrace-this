@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "version": "1.0.0",
+  "description": "Workshop slides on `this` keyword mechanics in ecmascript",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "build": "mdx-deck build --no-html deck.mdx && npx cp -r images dist/ && npx -p touch -c \"nodetouch dist/.nojekyll\"",
+    "pdf": "mdx-deck pdf deck.mdx",
+    "image": "mdx-deck screenshot deck.mdx",
+    "help": "mdx-deck"
+  },
+  "keywords": [],
+  "author": "Karen Grigoryan <karen@karenjs.com>",
+  "license": "MIT",
+  "name": "embrace_this",
+  "dependencies": {
+    "mdx-deck": "1.8.2",
+    "mdx-deck-code-surfer": "0.5.5",
+    "raw-loader": "1.0.0",
+    "styled-icons": "^6.6.0"
+  }
+}
